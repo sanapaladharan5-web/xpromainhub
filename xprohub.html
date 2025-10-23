@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XPRO Link Hub</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .summary {
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      font-size: 1rem;
+      color: #aaa;
+      line-height: 1.5;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 25px;
+      border-radius: 15px;
+      width: 250px;
+      display: inline-block;
+      box-shadow: 0 0 20px rgba(255, 0, 87, 0.3);
+      transition: 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+      animation-delay: 0.1s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(255, 0, 87, 0.5);
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #ff0057;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #ff0057; }
+      50% { box-shadow: 0 0 25px #ff7a00; }
+      100% { box-shadow: 0 0 10px #ff0057; }
+    }
+
+    h1 {
+      margin: 15px 0 10px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #aaa;
+      margin-bottom: 15px;
+    }
+
+    a {
+      background: linear-gradient(270deg, #ff0057, #ff7a00, #ff0057);
+      background-size: 400%;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      display: inline-block;
+      animation: slide 3s infinite;
+      transition: 0.2s;
+    }
+
+    @keyframes slide {
+      0% { background-position: 0%; }
+      100% { background-position: 100%; }
+    }
+
+    a:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Editable Summary -->
+  <div class="summary">
+    🔥 Welcome to XPRO Hub! 🔥<br>
+    This is the one-stop spot for all my content: gaming chaos, epic edits, and exclusive behind-the-scenes action!  
+    Subscribe to stay updated on everything XPRO.  
+    <br><br>
+    ✏️ <strong>Tip:</strong> You can easily edit this paragraph anytime — just change the text inside this div.
+  </div>
+
+  <!-- YouTube Card -->
+  <div class="card">
+    <img src="https://yt3.ggpht.com/OrEs2mswqbwi-pifxXcsVLzbp2goIpsteWbjDixEx17m0E-4rruHDPhL9aazJ72O7JaO_EptPQ=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="YouTube Logo">
+    <h1>XPRO</h1>
+    <p>🔥 Gaming • Edits • Chaos — Subscribe!</p>
+    <a href="https://www.youtube.com/@xproeditzz" target="_blank">🎥 YouTube</a>
+  </div>
+
+</body>
+</html>
